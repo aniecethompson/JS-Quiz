@@ -7,7 +7,7 @@ function startQuiz() {
     console.log("started")
     startButton.classList.add("hide")
     nextButton.classList.remove("hide")
-    questionContainer.remove("hide")
+    questionContainer.classList.remove("hide")
 }
 
 function showNextQuestion() {

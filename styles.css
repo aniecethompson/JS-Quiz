@@ -1,11 +1,13 @@
-:root{
-    --hue-neutral: 200;
-    --hue-wrong: 0;
-    --hue-correct: 145;
+html{
+    background: url("./bridge1.jpg") no-repeat center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
 }
 
 body{
-    --hue: var(--hue-neutral);
+    /* --hue: var(--hue-neutral); */
+    
     padding: 0;
     margin: 0;
     display: flex;
@@ -15,21 +17,22 @@ body{
     align-items: center;
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
-    background-color: hsl(var(--hue), 100%, 20%);
+    /* background-color: hsl(var(--hue), 100%, 20%); */
 }
 
 body.correct{
-    --hue: var(--hue-correct);
+    background-color: #E2EB98;
 }
 
 body.wrong{
-    --hue: var(--hue-wrong);
+    background-color: #474448;
 }
 
 .container{
     width: 800px;
     max-width: 80%;
-    background-color: whitesmoke;
+    background-color: #A39171;
+    opacity: 0.95;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
@@ -43,12 +46,12 @@ body.wrong{
 }
 
 .btn{
-    --hue: var(--hue-neutral);
-    border: 1px solid hsl(var(--hue), 100%, 30%);
-    background-color: hsl(var(--hue), 100%, 50%);
+    border: 1px solid black;
+    background-color: #94B1C7;
     border-radius: 5px;
     padding: 5px 10px;
-    color: whitesmoke;
+    font-size: large;
+    color: #6F6C71;
     outline: none;
 }
 
@@ -57,12 +60,12 @@ body.wrong{
 }
 
 .btn.correct{
-    --hue: var(--hue-correct);
+    background-color: #E2EB98;
     color: black ;
 }
 
 .btn.wrong{
-    --hue: var(--hue-wrong);
+    background-color: #474448;
 }
 
 .start-btn, .next-btn{
@@ -75,6 +78,7 @@ body.wrong{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 .hide{
